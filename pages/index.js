@@ -1,4 +1,4 @@
-
+import Head from 'next/head'
 import React from "react";
 import { Container, Spacer, Grid, Button, Text, Card, Modal, useModal } from '@nextui-org/react'
 
@@ -13,6 +13,10 @@ export default function Home() {
   };
 
   return (
+    <>
+    <Head>
+      <title>MaxCraftMC</title>
+    </Head>
     <Container>
       <Grid.Container gap={-1} justify="center">
         <Text
@@ -127,5 +131,6 @@ export default function Home() {
 
 
     </Container>
+    </>
   )
 }
