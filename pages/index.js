@@ -50,7 +50,7 @@ export default function Home() {
 
 
       <Grid.Container justify="center">
-        <Grid sm={12} md={6} lg={2}>
+        <Grid xs={6} sm={6} md={4} lg={2}>
           <Card>
             <Card.Body>
               <Text b>民主</Text>
@@ -59,7 +59,7 @@ export default function Home() {
           </Card>
         </Grid>
 
-        <Grid sm={12} md={6} lg={2}>
+        <Grid xs={6} sm={6} md={4} lg={2}>
           <Card>
             <Card.Body>
               <Text b>自由</Text>
@@ -68,7 +68,7 @@ export default function Home() {
           </Card>
         </Grid>
 
-        <Grid sm={12} md={6} lg={2}>
+        <Grid xs={6} sm={6} md={4} lg={2}>
           <Card>
             <Card.Body>
               <Text b>兼容</Text>
@@ -77,7 +77,7 @@ export default function Home() {
           </Card>
         </Grid>
 
-        <Grid sm={6} md={4} lg={2}>
+        <Grid xs={6} sm={6} md={4} lg={2}>
           <Card>
             <Card.Body>
               <Text b>公正</Text>
@@ -86,6 +86,8 @@ export default function Home() {
           </Card>
         </Grid>
       </Grid.Container>
+
+
 
 
     </Container>
