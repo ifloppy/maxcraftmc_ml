@@ -31,7 +31,7 @@ export default function Home() {
         >
           MaxCraft服务器
         </Text>
-
+        <Text style={{textAlign: 'center'}}>你说得对，但是MaxCraft是由FloppyBetaStudio维护的一个高自由度的公益我的世界服务器。<br/>游戏发生在一个被称作Minecraft的幻想世界，在这里，被Notch选中的人将被授予“史蒂夫的手”，导引史蒂夫之力。<br/>你将扮演一位名为“玩家”的神秘角色，在自由的旅行中邂逅性格各异的同伴们，和他们一起击败末影龙，建立自己的家园——同时，逐步发掘“MaxCraft公开议会”的真相。 </Text>
         <Spacer y={1}></Spacer>
         <Grid.Container gap={2} justify="center">
           <Grid>
