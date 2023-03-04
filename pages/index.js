@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacer, Grid, Button, Text, Card, Modal, useModal } from '@nextui-org/react'
+import { Container, Spacer, Grid, Button, Text, Card, Modal, Link } from '@nextui-org/react'
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
@@ -106,8 +106,15 @@ export default function Home() {
           </Grid>
         </Grid.Container>
 
-
-
+        <Spacer/>
+        <Grid.Container justify="center">
+      <Grid xs={4}>
+      <Link color="secondary" onPress={()=>{window.open('https://www.123pan.com/s/AC1bVv-AyqBv.html')}} href="#">
+        下载中心
+      </Link>
+      </Grid>
+    </Grid.Container>
+        
 
       </Container>
     </>
