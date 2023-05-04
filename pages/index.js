@@ -3,12 +3,13 @@ import { Container, Spacer, Grid, Button, Text, Card, Modal, Link } from '@nextu
 import { NextSeo } from 'next-seo';
 
 export default function Home() {
-  const [visible, setVisible] = React.useState(false);
-  const joinQQGroupHandler = () => { setVisible(true); window.open('https://jq.qq.com/?_wv=1027&k=Rh5tyeB1', '_blank'); };
+  const [qqMessageBoxVIsible, setqqMessageBoxVIsible] = React.useState(false);
+  const joinQQGroupHandler = () => { setqqMessageBoxVIsible(true); window.open('https://jq.qq.com/?_wv=1027&k=Rh5tyeB1', '_blank'); };
   const joinDiscordHandler = () => { window.open('https://discord.gg/Jr3G4P7gZ6', '_blank'); };
+  const joinKookHandler = () => { window.open('https://kook.top/RsQoYm', '_blank'); };
 
   const closeHandler = () => {
-    setVisible(false);
+    setqqMessageBoxVIsible(false);
 
   };
 
@@ -40,13 +41,16 @@ export default function Home() {
           <Grid>
             <Button size='xl' auto shadow onPress={joinDiscordHandler}>加入Discord</Button>
           </Grid>
+          <Grid>
+            <Button size='xl' auto shadow onPress={joinKookHandler}>加入Kook</Button>
+          </Grid>
         </Grid.Container>
 
 
         <Modal
           closeButton
           aria-labelledby="modal-title"
-          open={visible}
+          open={qqMessageBoxVIsible}
           onClose={closeHandler}
         >
           <Modal.Header>
@@ -60,7 +64,7 @@ export default function Home() {
             </Text>
           </Modal.Body>
           <Modal.Footer>
-            <Button auto onPress={() => setVisible(false)}>
+            <Button auto onPress={() => setqqMessageBoxVIsible(false)}>
               确认
             </Button>
           </Modal.Footer>
@@ -108,10 +112,16 @@ export default function Home() {
 
         <Spacer/>
         <Grid.Container justify="center">
-      <Grid xs={4}>
+      <Grid xs={2}>
       <Link color="secondary" onPress={()=>{window.open('https://www.123pan.com/s/AC1bVv-AyqBv.html')}} href="#">
         下载中心
       </Link>
+      </Grid>
+      <Grid xs={2}>由
+      <Link color="secondary" onPress={()=>{window.open('https://www.iruanp.com/')}} href="#">
+        FloppyBetaStudio
+      </Link>
+      运营
       </Grid>
     </Grid.Container>
         
